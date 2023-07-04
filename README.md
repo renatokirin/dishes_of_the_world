@@ -2,6 +2,17 @@
 
 Meal filtering system that provides an API for generating sample data, retrieving meals, categories, ingredients, and tags, filtering meals, and soft deleting a meal. It is built using PHP and the Laravel framework.
 
+
+## Running the project
+* `composer install`
+* rename .env.example to .env
+* configure database in .env
+* `php artisan migrate`
+
+  For development, SQLite was used. To use SQLite in this project, change DB_CONNECTION=sqlite and remove the following lines: DB_DATABASE, DB_USERNAME, DB_PASSWORD.
+  Create database.sqlite file in the /database folder 
+
+
 ### GET /meals/generate
 Generates sample data for meals, categories, ingredients, and tags.
 
